@@ -21,9 +21,9 @@
 		E15000FA1FE18248006E14FB /* pikkartAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E170AEFB1FA2325D000B219B /* pikkartAR.framework */; };
 		E15000FC1FE18272006E14FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E15000FB1FE18272006E14FB /* libz.tbd */; };
 		E15000FE1FE18278006E14FB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E15000FD1FE18278006E14FB /* libsqlite3.tbd */; };
-		E15737121D6306A200E01527 /* media.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E15737111D6306A200E01527 /* media.bundle */; };
-		E15737141D63074900E01527 /* VideoMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15737131D63074900E01527 /* VideoMesh.swift */; };
-		E15737161D6307E500E01527 /* PikkartVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15737151D6307E500E01527 /* PikkartVideoPlayer.swift */; };
+		E15D482D1FEBEAE70047C153 /* 1836_65266.png in Resources */ = {isa = PBXBuildFile; fileRef = E15D482A1FEBEAE70047C153 /* 1836_65266.png */; };
+		E15D482E1FEBEAE70047C153 /* 1836_97703.png in Resources */ = {isa = PBXBuildFile; fileRef = E15D482B1FEBEAE70047C153 /* 1836_97703.png */; };
+		E15D482F1FEBEAE70047C153 /* 1836_84895.png in Resources */ = {isa = PBXBuildFile; fileRef = E15D482C1FEBEAE70047C153 /* 1836_84895.png */; };
 		E18698FE1D74227700D4B562 /* markers.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E18698FD1D74227700D4B562 /* markers.bundle */; };
 		E1AA436A1FA20D5200F8384F /* texturegray.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AA43671FA20D5200F8384F /* texturegray.png */; };
 		E1AA436B1FA20D5200F8384F /* texture2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AA43681FA20D5200F8384F /* texture2.png */; };
@@ -49,9 +49,9 @@
 		E12CB3B01D4F5E80009AB7B9 /* RenderUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderUtils.swift; sourceTree = "<group>"; };
 		E15000FB1FE18272006E14FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E15000FD1FE18278006E14FB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		E15737111D6306A200E01527 /* media.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = media.bundle; sourceTree = "<group>"; };
-		E15737131D63074900E01527 /* VideoMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMesh.swift; sourceTree = "<group>"; };
-		E15737151D6307E500E01527 /* PikkartVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PikkartVideoPlayer.swift; sourceTree = "<group>"; };
+		E15D482A1FEBEAE70047C153 /* 1836_65266.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1836_65266.png; sourceTree = "<group>"; };
+		E15D482B1FEBEAE70047C153 /* 1836_97703.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1836_97703.png; sourceTree = "<group>"; };
+		E15D482C1FEBEAE70047C153 /* 1836_84895.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1836_84895.png; sourceTree = "<group>"; };
 		E170AEFB1FA2325D000B219B /* pikkartAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pikkartAR.framework; path = ../../pikkartAR.framework; sourceTree = "<group>"; };
 		E18698FD1D74227700D4B562 /* markers.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = markers.bundle; sourceTree = "<group>"; };
 		E1AA43671FA20D5200F8384F /* texturegray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texturegray.png; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		E12CB38B1D4F57E7009AB7B9 /* ARLogo */ = {
 			isa = PBXGroup;
 			children = (
-				E15737101D62FB0400E01527 /* VideoRendering */,
+				E15D48291FEBEA9A0047C153 /* markerImages */,
 				E12CB3A91D4F5DAE009AB7B9 /* ExtraRendering */,
 				E12CB38C1D4F57E7009AB7B9 /* AppDelegate.swift */,
 				E12CB3931D4F57E7009AB7B9 /* Assets.xcassets */,
@@ -131,14 +131,14 @@
 			path = ExtraRendering;
 			sourceTree = "<group>";
 		};
-		E15737101D62FB0400E01527 /* VideoRendering */ = {
+		E15D48291FEBEA9A0047C153 /* markerImages */ = {
 			isa = PBXGroup;
 			children = (
-				E15737111D6306A200E01527 /* media.bundle */,
-				E15737131D63074900E01527 /* VideoMesh.swift */,
-				E15737151D6307E500E01527 /* PikkartVideoPlayer.swift */,
+				E15D482A1FEBEAE70047C153 /* 1836_65266.png */,
+				E15D482C1FEBEAE70047C153 /* 1836_84895.png */,
+				E15D482B1FEBEAE70047C153 /* 1836_97703.png */,
 			);
-			path = VideoRendering;
+			path = markerImages;
 			sourceTree = "<group>";
 		};
 		E170AEFA1FA2325D000B219B /* Frameworks */ = {
@@ -214,14 +214,16 @@
 			files = (
 				E12CB3971D4F57E7009AB7B9 /* LaunchScreen.storyboard in Resources */,
 				E1B1D8611DB664920046FD38 /* license.spz in Resources */,
+				E15D482F1FEBEAE70047C153 /* 1836_84895.png in Resources */,
 				E1AA436C1FA20D5200F8384F /* texture3.png in Resources */,
 				E1AA436A1FA20D5200F8384F /* texturegray.png in Resources */,
 				E11C574F1D508AFC00043B2B /* monkey.json in Resources */,
 				E18698FE1D74227700D4B562 /* markers.bundle in Resources */,
-				E15737121D6306A200E01527 /* media.bundle in Resources */,
 				E1AA436B1FA20D5200F8384F /* texture2.png in Resources */,
 				E11C57511D508B0000043B2B /* texture.png in Resources */,
+				E15D482E1FEBEAE70047C153 /* 1836_97703.png in Resources */,
 				E12CB3941D4F57E7009AB7B9 /* Assets.xcassets in Resources */,
+				E15D482D1FEBEAE70047C153 /* 1836_65266.png in Resources */,
 				E11C57551D508DE800043B2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,11 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12CB3AF1D4F5E5A009AB7B9 /* Mesh.swift in Sources */,
-				E15737141D63074900E01527 /* VideoMesh.swift in Sources */,
 				E12CB3B11D4F5E80009AB7B9 /* RenderUtils.swift in Sources */,
 				E11C57571D508E5200043B2B /* RootViewController.swift in Sources */,
 				E12CB38F1D4F57E7009AB7B9 /* ViewController.swift in Sources */,
-				E15737161D6307E500E01527 /* PikkartVideoPlayer.swift in Sources */,
 				E12CB38D1D4F57E7009AB7B9 /* AppDelegate.swift in Sources */,
 				E1C3BEB41D4F92DD006E8B9C /* imageUtil.m in Sources */,
 			);

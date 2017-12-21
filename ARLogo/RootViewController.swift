@@ -81,7 +81,7 @@ class RootViewController: UIViewController,PKTIRecognitionListener {
         print("arLogo called with code = \(code)")
         
         switch (code.intValue) {
-            case 598073875:
+            case 97703:
                 mainCtrl!.selectMonkey(monkeyID: 1)
             case 84895:
                 mainCtrl!.selectMonkey(monkeyID: 2)

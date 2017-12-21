@@ -17,20 +17,15 @@ class ViewController: PKTRecognitionController {
     var _monkeyMeshBlue:Mesh?
     var _monkeyMeshRed:Mesh?
     var _monkeyMeshGray:Mesh?
-    var _videoMesh:VideoMesh?
     var context:EAGLContext?
     
     internal func closeRecognition(_ sender:AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    internal func PlayOrPauseVideoAction(_ sender:AnyObject) {
-        self.playOrPauseVideo()
-    }
-    
     override func loadView() {
         // here we define a common openGL view, not using multisampling
-        self.context = EAGLContext(api: .openGLES2)
+        self.context = EAGLContext(api: .openGLES3)
         let textureView:GLKView = GLKView(frame: UIScreen.main.bounds, context: self.context!)
         textureView.drawableColorFormat = .RGB565
         textureView.drawableDepthFormat = .format24
@@ -358,10 +353,5 @@ class ViewController: PKTRecognitionController {
         }
         glFinish();
     }
-    
-    internal func playOrPauseVideo() { _videoMesh!.playOrPauseVideo() }
-    
-    internal func pauseVideo() { _videoMesh!.pauseVideo() }
-    
 }
 
