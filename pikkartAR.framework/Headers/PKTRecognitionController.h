@@ -27,7 +27,7 @@
 #import "PKTINetworkInfoProvider.h"
 
 
-typedef void(^PKTRecognitionControllerCompletionHandler)(); /**< Completion Handler used in Recognition Reset */
+typedef void(^PKTRecognitionControllerCompletionHandler)(void); /**< Completion Handler used in Recognition Reset */
 
 typedef NS_ENUM(NSInteger, PKTRecognitionFocusMode) {
     PKTFocusModeLocked              = AVCaptureFocusModeLocked,
@@ -44,11 +44,12 @@ typedef NS_ENUM(NSInteger, PKTRecognitionFocusMode) {
  * It allows photo camera access and recognition phase
  *
  *
- * \code
- * StartRecognition:andRecognitionCallback:
- * \endcode
  */
+#ifdef __URHO3D__
+@interface PKTRecognitionController : UIViewController<PKTIRecognitionListener,PKTINetworkInfoProvider>
+#else
 @interface PKTRecognitionController : GLKViewController<PKTIRecognitionListener,PKTINetworkInfoProvider>
+#endif
 
 /*! \brief Start Recognition Session
  *
@@ -59,6 +60,11 @@ typedef NS_ENUM(NSInteger, PKTRecognitionFocusMode) {
  andRecognitionCallback:(id<PKTIRecognitionListener>) recognitionCallback;
 
 /*! \brief Stop Recognition Session without AVCaptureSession reset
+ *
+ */
+-(void) StopRecognitionWithoutCameraReset;
+
+/*! \brief Stop Recognition Session
  *
  */
 -(void)StopRecognition;
@@ -93,13 +99,13 @@ typedef NS_ENUM(NSInteger, PKTRecognitionFocusMode) {
 
 /*! \brief Get Current Projection Matrix
  *
- *  \param float ** Current projection matrix
+ *  \param matrixPointer Current projection matrix
  */
 -(void)getCurrentProjectionMatrix:(float **)matrixPointer;
 
 /*! \brief Get Current Model View Matrix
  *
- *  \param float ** Current model view matrix
+ *  \param matrixPointer Current model view matrix
  */
 -(void)getCurrentModelViewMatrix:(float **)matrixPointer;
 
@@ -165,5 +171,18 @@ typedef NS_ENUM(NSInteger, PKTRecognitionFocusMode) {
  * \brief disable the orange dots recognition effect
  */
 -(void)DisableRecognitionEffect;
+
+#pragma  mark - added for UhroSharp rendering
+#ifdef __URHO3D__
+typedef void(^PKTRecognitionControllerCompletionHandlerWithSuccess)(bool success);
+-(void)StopCameraAlone:(PKTRecognitionControllerCompletionHandlerWithSuccess)completionHandler;
+-(void)InitAndStartingCameraAlone:(UIViewController *)rootCtrl
+           andRecognitionCallBack:(id<PKTIRecognitionListener>)recognitionListener
+             andCompletionHandler:(PKTRecognitionControllerCompletionHandlerWithSuccess)completionHandler;
+-(void)StartOnlyRecognition:(PKTRecognitionOptions *)recognitionOptions;
+-(void)StopOnlyRecognition;
+-(CGSize)GetYDataToRender:(unsigned char **)ydata;
+-(CGSize)GetUVDataToRender:(unsigned char **)uvdata;
+#endif
 
 @end

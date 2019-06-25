@@ -75,6 +75,17 @@
  */
 -(void)ARLogoFound:(NSString *) markerId withCode:(NSNumber *)code;
 
+/**
+ * \brief Called whenever the app has an old SDK and can't open new markers.
+ *
+ * Called whenever the app has an old SDK and can't open new markers.
+ *
+ * @param markerId The id of the marker that cannot be loaded.
+ */
+-(void)markerEngineToUpdate:(NSString *) markerId;
 
+#pragma  mark - added for UhroSharp rendering
+-(void) didUpdateFrameY:(void *)y andYSize:(CGSize)ySize
+                  andUV:(void *)uv andUVSize:(CGSize)UVsize;
 
 @end

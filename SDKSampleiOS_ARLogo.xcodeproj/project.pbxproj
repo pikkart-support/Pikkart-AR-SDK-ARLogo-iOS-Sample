@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5C86BC522C10A9E005A6412 /* pikkartARLocalized.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5C86BC422C10A9D005A6412 /* pikkartARLocalized.bundle */; };
+		A5C86BC822C10B9D005A6412 /* pikkartAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C86BC722C10B9D005A6412 /* pikkartAR.framework */; };
 		E118038D1FE183FE00C88746 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E118038C1FE183FD00C88746 /* SystemConfiguration.framework */; };
 		E11C574F1D508AFC00043B2B /* monkey.json in Resources */ = {isa = PBXBuildFile; fileRef = E11C574E1D508AFC00043B2B /* monkey.json */; };
 		E11C57511D508B0000043B2B /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E11C57501D508B0000043B2B /* texture.png */; };
@@ -18,7 +20,6 @@
 		E12CB3971D4F57E7009AB7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12CB3951D4F57E7009AB7B9 /* LaunchScreen.storyboard */; };
 		E12CB3AF1D4F5E5A009AB7B9 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CB3AE1D4F5E5A009AB7B9 /* Mesh.swift */; };
 		E12CB3B11D4F5E80009AB7B9 /* RenderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CB3B01D4F5E80009AB7B9 /* RenderUtils.swift */; };
-		E15000FA1FE18248006E14FB /* pikkartAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E170AEFB1FA2325D000B219B /* pikkartAR.framework */; };
 		E15000FC1FE18272006E14FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E15000FB1FE18272006E14FB /* libz.tbd */; };
 		E15000FE1FE18278006E14FB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E15000FD1FE18278006E14FB /* libsqlite3.tbd */; };
 		E15D482D1FEBEAE70047C153 /* 1836_65266.png in Resources */ = {isa = PBXBuildFile; fileRef = E15D482A1FEBEAE70047C153 /* 1836_65266.png */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5C86BC422C10A9D005A6412 /* pikkartARLocalized.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pikkartARLocalized.bundle; sourceTree = SOURCE_ROOT; };
+		A5C86BC722C10B9D005A6412 /* pikkartAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pikkartAR.framework; sourceTree = "<group>"; };
 		E118038C1FE183FD00C88746 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E11C574E1D508AFC00043B2B /* monkey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkey.json; sourceTree = "<group>"; };
 		E11C57501D508B0000043B2B /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		E15D482A1FEBEAE70047C153 /* 1836_65266.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1836_65266.png; sourceTree = "<group>"; };
 		E15D482B1FEBEAE70047C153 /* 1836_97703.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1836_97703.png; sourceTree = "<group>"; };
 		E15D482C1FEBEAE70047C153 /* 1836_84895.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1836_84895.png; sourceTree = "<group>"; };
-		E170AEFB1FA2325D000B219B /* pikkartAR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pikkartAR.framework; path = ../../pikkartAR.framework; sourceTree = "<group>"; };
 		E18698FD1D74227700D4B562 /* markers.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = markers.bundle; sourceTree = "<group>"; };
 		E1AA43671FA20D5200F8384F /* texturegray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texturegray.png; sourceTree = "<group>"; };
 		E1AA43681FA20D5200F8384F /* texture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture2.png; sourceTree = "<group>"; };
@@ -68,10 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C86BC822C10B9D005A6412 /* pikkartAR.framework in Frameworks */,
 				E118038D1FE183FE00C88746 /* SystemConfiguration.framework in Frameworks */,
 				E15000FE1FE18278006E14FB /* libsqlite3.tbd in Frameworks */,
 				E15000FC1FE18272006E14FB /* libz.tbd in Frameworks */,
-				E15000FA1FE18248006E14FB /* pikkartAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,7 @@
 				E12CB3931D4F57E7009AB7B9 /* Assets.xcassets */,
 				E12CB3951D4F57E7009AB7B9 /* LaunchScreen.storyboard */,
 				E12CB3981D4F57E7009AB7B9 /* Info.plist */,
+				A5C86BC422C10A9D005A6412 /* pikkartARLocalized.bundle */,
 			);
 			path = ARLogo;
 			sourceTree = "<group>";
@@ -144,10 +147,10 @@
 		E170AEFA1FA2325D000B219B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5C86BC722C10B9D005A6412 /* pikkartAR.framework */,
 				E118038C1FE183FD00C88746 /* SystemConfiguration.framework */,
 				E15000FD1FE18278006E14FB /* libsqlite3.tbd */,
 				E15000FB1FE18272006E14FB /* libz.tbd */,
-				E170AEFB1FA2325D000B219B /* pikkartAR.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -219,6 +223,7 @@
 				E1AA436A1FA20D5200F8384F /* texturegray.png in Resources */,
 				E11C574F1D508AFC00043B2B /* monkey.json in Resources */,
 				E18698FE1D74227700D4B562 /* markers.bundle in Resources */,
+				A5C86BC522C10A9E005A6412 /* pikkartARLocalized.bundle in Resources */,
 				E1AA436B1FA20D5200F8384F /* texture2.png in Resources */,
 				E11C57511D508B0000043B2B /* texture.png in Resources */,
 				E15D482E1FEBEAE70047C153 /* 1836_97703.png in Resources */,
@@ -347,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roberto Avanzi (UCA9RDAL8N)";
 				DEVELOPMENT_TEAM = 3G6WA29NLC;
 				ENABLE_BITCODE = NO;
@@ -359,15 +365,18 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ARLogo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-lstdc++";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikkart.trial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f11ac498-f3b8-4e91-9f91-46987549e41c";
 				PROVISIONING_PROFILE_SPECIFIER = PikkartWildCardDevProfile;
 				STRIP_STYLE = debugging;
 				SWIFT_OBJC_BRIDGING_HEADER = "ARLogo-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				VALID_ARCHS = "arm64 armv7";
+				SWIFT_VERSION = 4.2;
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -375,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				DEVELOPMENT_TEAM = 3G6WA29NLC;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -386,15 +396,18 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ARLogo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-lstdc++";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikkart.trial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7560bf75-d191-424e-9a8d-6f64a6afdeb5";
 				PROVISIONING_PROFILE_SPECIFIER = PikkartWildCardDevProfile;
 				STRIP_STYLE = debugging;
 				SWIFT_OBJC_BRIDGING_HEADER = "ARLogo-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				VALID_ARCHS = "arm64 armv7";
+				SWIFT_VERSION = 4.2;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};

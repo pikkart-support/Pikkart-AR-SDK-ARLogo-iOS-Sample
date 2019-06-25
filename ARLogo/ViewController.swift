@@ -19,7 +19,7 @@ class ViewController: PKTRecognitionController {
     var _monkeyMeshGray:Mesh?
     var context:EAGLContext?
     
-    internal func closeRecognition(_ sender:AnyObject) {
+    @objc internal func closeRecognition(_ sender:AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -112,13 +112,6 @@ class ViewController: PKTRecognitionController {
         let scale:CGFloat=mainScreen.scale
         var widthPort:CGFloat=boundScreen.size.width*scale;
         var heightPort:CGFloat=boundScreen.size.height*scale;
-        
-        if (scale == 3) // iPhone 6 plus non è un vero @3x, ma c'e' un downsampling
-            // http://www.paintcodeapp.com/news/iphone-6-screens-demystified
-        {
-            widthPort=widthPort/1.15;
-            heightPort=heightPort/1.15;
-        }
         
         var angle:Int=90;
         
