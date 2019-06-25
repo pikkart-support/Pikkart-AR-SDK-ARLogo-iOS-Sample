@@ -2,4 +2,54 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARLogo/ViewController.swift"
+            timestampString = "583165858.638345"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
+            landmarkName = "computeProjectionMatrix(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SDKSampleiOS_ARLogo.ViewController.computeProjectionMatrix(Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Bool"
+                  moduleName = "SDKSampleiOS_ARLogo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/G-DRIVE_mobile_USB/avanzir/Apps/Apple/Progetti_Esterni/ProgettiDImpresa/PikkartARLibrary/Frameworks/SDK_4/Tutorials/SDKSampleiOS_ARLogo/ARLogo/ViewController.swift"
+                  timestampString = "583165859.180433"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "316"
+                  endingLineNumber = "316"
+                  offsetFromSymbolStart = "3124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SDKSampleiOS_ARLogo.ViewController.computeProjectionMatrix(Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Bool"
+                  moduleName = "SDKSampleiOS_ARLogo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/G-DRIVE_mobile_USB/avanzir/Apps/Apple/Progetti_Esterni/ProgettiDImpresa/PikkartARLibrary/Frameworks/SDK_4/Tutorials/SDKSampleiOS_ARLogo/ARLogo/ViewController.swift"
+                  timestampString = "583165859.182724"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "316"
+                  endingLineNumber = "316"
+                  offsetFromSymbolStart = "3168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -29,7 +29,6 @@
 		E1AA436A1FA20D5200F8384F /* texturegray.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AA43671FA20D5200F8384F /* texturegray.png */; };
 		E1AA436B1FA20D5200F8384F /* texture2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AA43681FA20D5200F8384F /* texture2.png */; };
 		E1AA436C1FA20D5200F8384F /* texture3.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AA43691FA20D5200F8384F /* texture3.png */; };
-		E1B1D8611DB664920046FD38 /* license.spz in Resources */ = {isa = PBXBuildFile; fileRef = E1B1D8601DB664920046FD38 /* license.spz */; };
 		E1C3BEB41D4F92DD006E8B9C /* imageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3BEB31D4F92DD006E8B9C /* imageUtil.m */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		E1AA43671FA20D5200F8384F /* texturegray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texturegray.png; sourceTree = "<group>"; };
 		E1AA43681FA20D5200F8384F /* texture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture2.png; sourceTree = "<group>"; };
 		E1AA43691FA20D5200F8384F /* texture3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture3.png; sourceTree = "<group>"; };
-		E1B1D8601DB664920046FD38 /* license.spz */ = {isa = PBXFileReference; lastKnownFileType = file; path = license.spz; sourceTree = "<group>"; };
 		E1C3BEB21D4F92DD006E8B9C /* imageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageUtil.h; sourceTree = "<group>"; };
 		E1C3BEB31D4F92DD006E8B9C /* imageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageUtil.m; sourceTree = "<group>"; };
 		E1C3BEB51D4F9303006E8B9C /* glUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glUtil.h; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 		E12CB3801D4F57E7009AB7B9 = {
 			isa = PBXGroup;
 			children = (
-				E1B1D8601DB664920046FD38 /* license.spz */,
 				E12CB3A01D4F5957009AB7B9 /* ARLogo-Bridging-Header.h */,
 				E12CB38B1D4F57E7009AB7B9 /* ARLogo */,
 				E12CB38A1D4F57E7009AB7B9 /* Products */,
@@ -217,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12CB3971D4F57E7009AB7B9 /* LaunchScreen.storyboard in Resources */,
-				E1B1D8611DB664920046FD38 /* license.spz in Resources */,
 				E15D482F1FEBEAE70047C153 /* 1836_84895.png in Resources */,
 				E1AA436C1FA20D5200F8384F /* texture3.png in Resources */,
 				E1AA436A1FA20D5200F8384F /* texturegray.png in Resources */,
